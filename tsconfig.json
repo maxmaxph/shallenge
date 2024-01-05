@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                  // Version cible de ECMAScript pour le code JavaScript compilé
+    "module": "commonjs",                                // Utilisez le format de module commonjs, adapté pour Node.js
+    "esModuleInterop": true,                             // Active une interopérabilité plus aisée avec les modules CommonJS
+    "forceConsistentCasingInFileNames": true,            // Force la cohérence de la casse dans les noms de fichiers
+    "strict": true,                                      // Active toutes les options strictes de type checking
+    "skipLibCheck": true,                                // Ignore le type checking des fichiers de déclaration
+
+    // Dossiers de sortie et d'entrée
+    "outDir": "./dist",                                  // Dossier où placer les fichiers JavaScript compilés
+    "rootDir": "./src",                                  // Dossier contenant vos fichiers source TypeScript
+
+    // Options supplémentaires pour le développement
+    "sourceMap": true,                                   // Génère des fichiers source map pour le débogage
+    "removeComments": false                              // Conserve les commentaires dans le code compilé
+  },
+  "include": [
+    "src/**/*"                                          // Inclut tous les fichiers TypeScript dans le dossier src
+  ],
+  "exclude": [
+    "node_modules",                                     // Exclut le dossier node_modules du processus de compilation
+    "**/*.test.ts"                                      // Exclut les fichiers de test (si présents)
+  ]
+}
